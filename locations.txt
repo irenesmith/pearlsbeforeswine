@@ -1,0 +1,21 @@
+1, Front Walk, 3, 0, 0, 2, 0, 0
+2, Driveway, 9, 0, 1, 0, 0, 0
+3, Front Porch, 4, 1, 0, 0, 0, 0
+4, Entry Hall, 10, 3, 5, 0, 11, 0
+5, Living Room, 6, 0, 0, 4, 0, 0
+6, Dining Room, 0, 5, 0, 7, 0, 0
+7, Kitchen", 0, 8, 6, 0, 0, 0
+8, Laundry Room, 7, 0, 0, 9, 0, 21
+9, Garage, 0, 2, 8, 0, 0, 0
+10, Bathroom, 0, 4, 0, 0, 0, 0
+11, Landing, 0, 0, 14, 12, 0, 4
+12, Irene's Office, 0, 0, 11, 0, 0, 0
+13, Warren's Office, 0, 16, 0, 0, 0, 0
+14, Hallway 1, 15, 0, 16, 11, 0, 0
+15, Matt's Room, 0, 14, 0, 0, 0, 0
+16, Hallway 2, 13, 18, 17, 14, 20, 0
+17, Main Bathroom, 0, 0, 0, 16, 0, 0
+18, Master Bedroom, 16, 0, 0, 19, 0, 0
+19, Master Bathroom, 0, 0, 18, 0, 0, 0
+20, Attic, 0, 0, 0, 0, 0, 16
+21, Basement, 0, 0, 0, 0, 8, 0
