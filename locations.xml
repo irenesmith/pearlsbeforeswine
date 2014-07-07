@@ -1,0 +1,326 @@
+<?xml version='1.0'?>
+<game_locations>
+	<location ID="1" Visited="0">
+		<North>3</North>
+		<South>0</South>
+		<East>0</East>
+		<West>2</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Front Walk</Name>
+		<Description>
+You are standing in front of a large white house. Next to you is a small
+mailbox. It is an old fashioned mailbox, the kind that you might see standing
+next to a farmhouse out in the country somewhere. The only thing is, this is
+the city. The mailbox just doesn't belong here. Oh, and it is purple! Yes, it
+is purple and it has white flowers on it.
+
+Your car is parked at the curb. Unfortunately, in your haste to get out of the
+car, you locked your keys and your phone inside. Good luck with that.
+		</Description>
+	</location>
+	<location ID="2" Visited="0">
+		<North>9</North>
+		<South>0</South>
+		<East>1</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Driveway</Name>
+		<Description>
+The driveway is paved with concrete rather than blacktop. It is generally
+in good repair but there are a few cracks and, here and there, blades of
+grass have grown up through the cracks.
+		</Description>
+	</location>
+	<location ID="3" Visited="0">
+		<North>4</North>
+		<South>1</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Front Porch</Name>
+		<Description>
+The front porch is small. There is only enough room for one or two people to
+stand in front of the door. Strangely enough, there is another mailbox here.
+This one is the kind they normally have on city homes. Unfortunately, someone
+has been messing around and it is hanging by one nail. It is clearly empty. The
+front door is white, with nine small pains of glass. You might try to look in,
+but the panes of glass are pebbled, so that you can only sense light and shadow
+on the other side. I suppose it was a privacy measure.
+		</Description>
+	</location>
+	<location ID="4" Visited="0">
+		<North>10</North>
+		<South>3</South>
+		<East>5</East>
+		<West>0</West>
+		<Up>11</Up>
+		<Down>0</Down>
+		<Name>Entry Hall</Name>
+		<Description>
+Entry Hall is a grand term for such a small space. The area is just large
+enough to contain a small closet. Straight ahead, a small door opens into
+a powder room. To the left is a staircase leading up to the second floor. At
+the bottom of the stairs, there is a bookcase filled with DVDs and Blu-Rays.
+		</Description>
+	</location>
+	<location ID="5" Visited="0">
+		<North>6</North>
+		<South>0</South>
+		<East>0</East>
+		<West>4</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Living Room</Name>
+		<Description>
+The Living Room is large. It contains two full-sized couches and a recliner.
+There is a fireplace in the center of the East wall. Next to the fireplace is
+a large-screen television. On the north end of the room an archway leads into
+the Dining Room. The south end of the room is dominated by a bay window.
+		</Description>
+	</location>
+	<location ID="6" Visited="0">
+		<North>0</North>
+		<South>5</South>
+		<East>0</East>
+		<West>7</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Dining Room</Name>
+		<Description>
+The Dining Room is just large enough to hold a hardwood table and eight
+massive chairs. The charis are made of dark wood and are ornately carved. Two
+pairs of cabinets on the back wall flank a framed print of "The Knighting."
+The table is clear, except for a blue pillar candle.
+		</Description>
+	</location>
+	<location ID="7" Visited="0">
+		<North>0</North>
+		<South>8</South>
+		<East>6</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Kitchen</Name>
+		<Description>
+The kitchen is small but efficiently laid out. The refrigerator is a side-
+by-side model with a brushed aluminum front. The countertop surfaces are
+black marble. A double sink under the north window gives you a view of the
+backyard, an overgrown mass of tall grass dotted here and there with Queen
+Anne's Lace.
+		</Description>
+	</location>
+	<location ID="8" Visited="0">
+		<North>7</North>
+		<South>0</South>
+		<East>0</East>
+		<West>9</West>
+		<Up>0</Up>
+		<Down>21</Down>
+		<Name>Laundry Room</Name>
+		<Description>
+The Laundry Room is even smaller than the Entry Hall. A washer and dryer stand
+on the east wall. The West wall contains a door that leads to the garage and
+a flight of stairs leads down to what is probably the basement.
+		</Description>
+	</location>
+	<location ID="9" Visited="0">
+		<North>0</North>
+		<South>2</South>
+		<East>8</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Garage</Name>
+		<Description>
+The Garage runs the length of the house and contains an eclectic collection of
+tools. A workbench dominates the West wall. The light is one, apparently it has
+been burning since your Aunt was in residence. You might wonder what she was
+doing with all such a huge tool collection, but you have to hand her credit for
+having good taste.
+		</Description>
+	</location>
+	<location ID="10" Visited="0">
+		<North>0</North>
+		<South>4</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Powder Room</Name>
+		<Description>
+The Powder Room is small. There is only enough room for a toilet and a sink.
+		</Description>
+	</location>
+	<location ID="11" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>14</East>
+		<West>12</West>
+		<Up>0</Up>
+		<Down>4</Down>
+		<Name>Upstairs Landing</Name>
+		<Description>
+You are at the top of the stairs, just outside what seems to be a home office.
+The halway to the east has several doors opening off it and another door at
+the opposite end of the hall opens into a slightly larger bathroom. A sign on
+the door outside the office says, "Irene's Office"
+		</Description>
+	</location>
+	<location ID="12" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>11</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Irene's Office</Name>
+		<Description>
+Whoever Irene is, she has a really nice home office. Built-in bookcases lineage
+both sides of an alocve that leads to a narrow window on the south side of the
+room. The West wall has two broad windows, one of which has an air conditioning
+unit. A large multi-leveled desk is situated in the northwest corner of the
+room. The corner has been painted with purple chalkboard paint which has been
+covered with notes and what look like drawings of the user interface for
+computer applications. The desk has three monitors two on the upper level and
+off to the left on the lower level. There is a large-screen TV in the southeast
+corner of the room. The TV is on an entertainment center and you can see
+several gaming consoles and a Blu-Ray player on the stand underneath the TV.
+		</Description>
+	</location>
+	<location ID="13" Visited="0">
+		<North>0</North>
+		<South>16</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Warren's Office</Name>
+		<Description>
+This room is a home office. It contains an L-shaped desk, and yet another
+large-screen TV. The rest of the available space in this room has been devoted
+to bookcases. The collection of books is large and varied.
+		</Description>
+	</location>
+	<location ID="14" Visited="0">
+		<North>15</North>
+		<South>0</South>
+		<East>16</East>
+		<West>11</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Hallway (West End)</Name>
+		<Description>
+You are now standing in front of a door that says, "Matt's Place." You can
+enter the room, which is on the north side of the hall, or you can continue
+to the end of the hall where there are three doors leading to the north,
+south, and east.
+		</Description>
+	</location>
+	<location ID="15" Visited="0">
+		<North>0</North>
+		<South>14</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Matt's Room</Name>
+		<Description>
+This room has been painted a bright, cheerful blue. The room contains one
+of those beds that has three drawers underneath it. The room also contains a
+computer desk with a single screen and a desktop computer. Opposite the beds
+is yet another large-screen TV and several more video game consoles. Clearly
+there were people other than your Aunt living here and they loved movies and
+video games.
+		</Description>
+	</location>
+	<location ID="16" Visited="0">
+		<North>13</North>
+		<South>18</South>
+		<East>17</East>
+		<West>14</West>
+		<Up>20</Up>
+		<Down>0</Down>
+		<Name>Hallway (East End)</Name>
+		<Description>
+The east end of the hall features three doors and an overhead trapdoor that
+most likely leads to the attic.
+		</Description>
+	</location>
+	<location ID="17" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>0</East>
+		<West>16</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Main Bathroom</Name>
+		<Description>
+This bathroom is larger than the one downstairs. It has a large vanity with
+a mirrored medicine cabinet above it. Behind a shower curtain with a lighthouse
+motif, you find a small bathtub. A small window on the east side of the room
+looks out onto the neighbor's house.
+		</Description>
+	</location>
+	<location ID="18" Visited="0">
+		<North>16</North>
+		<South>0</South>
+		<East>0</East>
+		<West>19</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Master Bedroom</Name>
+		<Description>
+This is clearly the master bedroom. A queen-sized bed dominates the room,
+leaving room for a triple dresser on the north wall, and a tall dresser on the
+south wall. On top of the dresser is (you guess it!) yet another large-screen
+TV with a Blu-Ray player. A door on the west wall leads into the master bath.
+		</Description>
+	</location>
+	<location ID="19" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>18</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>0</Down>
+		<Name>Master Bathroom</Name>
+		<Description>
+The master bathroom contains a large shower stall with multiple shower heads.
+There is a small cabinet over the toilet, and a medicine cabinet over the sink.
+Other than that, htere is very little of interest in this room.
+		</Description>
+	</location>
+	<location ID="20" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>0</Up>
+		<Down>16</Down>
+		<Name>Attic</Name>
+		<Description>
+The attic doesn't have a floor. However, in several sections, 4' by 8' panels
+have been laid on the joists to provide storage space. Quite a few large
+cardboard boxes have been stored here.
+		</Description>
+	</location>
+	<location ID="21" Visited="0">
+		<North>0</North>
+		<South>0</South>
+		<East>0</East>
+		<West>0</West>
+		<Up>8</Up>
+		<Down>0</Down>
+		<Name>Basement</Name>
+		<Description>
+The basement was obviously devote to storage. In addition to the furnace and
+hot water heater, you find an upright freezer and shelves stocked with canned
+goods. On the east wall, someone has stacked at least 20 or more cardboard
+boxes on pallets. In the northwest corner of the room is an opening in the
+floor where you can see a sump pump.
+		</Description>
+	</location>
+</game_locations>
