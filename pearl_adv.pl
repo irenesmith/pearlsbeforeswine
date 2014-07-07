@@ -12,13 +12,12 @@ $current_loc = 1;	# This is the location where you start.
 $moves = 0;			# Incremented after every command
 $score = 0;			# The score doesn't get incremented yet.
 @locations = ();	# The array of location names and exits.
-@things = ();		# The array of things (id #, name, initial location.)
+
 #------------------------------------------------------------
 # Set up the game by describing the situation.
 #------------------------------------------------------------
 show_welcome_msg();
 init_locations();
-init_things();
 
 #------------------------------------------------------------
 # This is the main loop. It will repeat until the user enters
@@ -154,7 +153,7 @@ sub do_move {
 
 #------------------------------------------------------------
 # This routine loads the information
-# for room descriptions and exits
+# for room descriptions and exist
 # from the text files.
 #
 # The format for the file in v1.0 is:
@@ -186,21 +185,3 @@ sub init_locations {
 		$locations[$locID][6] = $exitD;
 	}
 }
-
-#------------------------------------------------------------
-# This routine loads the information for item descriptions
-# and their initial locations.
-#------------------------------------------------------------
-sub init_things {
-	# Open the things file.
-	open (thingFile, 'things.txt');
-	while (<thingFile>) {
-		chomp;
-		($thingID, $thingName, $thingLoc) = split(", ");
-		
-		$things[$thinkID][0] = $thingName;
-		$things[$thinkID][1] = $thingLoc;
-	}
-		
-}
-
