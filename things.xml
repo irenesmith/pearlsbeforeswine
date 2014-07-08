@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<things>
+	<thing ID="1" Value="25" Taken="0">
+		<Name>car keys</Name>
+		<Location>22</Location>
+	</thing>
+	<thing ID="2" value="10" Taken="0">
+		<Name>coat hanger</Name>
+		<Location>19</Location>
+	</thing>
+</things>

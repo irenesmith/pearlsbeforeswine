@@ -11,14 +11,7 @@ use Readonly;
 use XML::Simple;
 use Data::Dumper;
 
-<<<<<<< HEAD
-$user_quit = "";	# Set to "true" when the user enters the command "quit"
-$current_loc = 1;	# This is the location where you start.
-$moves = 0;			# Incremented after every command
-$score = 0;			# The score doesn't get incremented yet.
-@locations = ();	# The array of location names and exits.
-@things = ();		# The array of things (id #, name, initial location.)
-=======
+
 our $user_quit = "";	# Set to "true" when the user enters the command "quit"
 our $current_loc = "1";	# This is the location where you start.
 our $moves = 0;			# Incremented after every command
@@ -34,17 +27,13 @@ Readonly our $WEST => 4;
 Readonly our $UP => 5;
 Readonly our $DOWN => 6;
 
->>>>>>> origin/master
 #------------------------------------------------------------
 # Set up the game by describing the situation.
 #------------------------------------------------------------
 show_welcome_msg();
-<<<<<<< HEAD
-init_locations();
-init_things();
-=======
+
 our $locations = init_locations();
->>>>>>> origin/master
+$things = init_things();
 
 #------------------------------------------------------------
 # This is the main loop. It will repeat until the user enters
@@ -272,14 +261,10 @@ sub init_locations {
 #------------------------------------------------------------
 sub init_things {
 	# Open the things file.
-	open (thingFile, 'things.txt');
-	while (<thingFile>) {
-		chomp;
-		($thingID, $thingName, $thingLoc) = split(", ");
-		
-		$things[$thinkID][0] = $thingName;
-		$things[$thinkID][1] = $thingLoc;
-	}
-		
+	my $xml = new XML::Simple(KeyAttr=> {thing=>'ID'), ForceArray =>['things', 'thing']);
+	
+	my $stuff = $xml->XMLin("things.xml");
+	
+	return $stuff;
 }
 
