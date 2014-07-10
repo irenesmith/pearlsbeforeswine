@@ -119,7 +119,7 @@ sub PrintList {
 		# followed by the email and phone number, each field is
 		# displayed in a 25 character column, the same way that the
 		# header is displayed above.
-		printf("%-25s %-25s %s", $FullName, $Email, $PhoneNumber);
+		printf("%-28s %-30s %-s", $FullName, $Email, $PhoneNumber);
 	}
 	close MY_FILE;
 }
@@ -172,7 +172,7 @@ sub FindByLast {
 			# Concatenate the first and last names.
 			my $FullName = $LastName . ", " . $FirstName;
 			# Display the row.
-			printf("%-26s %-26s %s", $FullName, $Email, $PhoneNumber);
+			printf("%-28s %-30s %-s", $FullName, $Email, $PhoneNumber);
 			# increment the count
 			++$findCount;
 		}
@@ -207,7 +207,7 @@ sub FindName {
 			# Concatenate the first and last names.
 			my $FullName = $LastName . ", " . $FirstName;
 			# Display the row.
-			printf("%-26s %-26s %s", $FullName, $Email, $PhoneNumber);
+			printf("%-28s %-30s %-s", $FullName, $Email, $PhoneNumber);
 			# increment the count
 			++$findCount;
 		}
@@ -270,6 +270,6 @@ sub PrintHeader {
 	# the data lines neater. The first two are displayed in a 26
 	# character-wide column to space out the line and make it pretty.
 	print "-------------------------------------------------------------------------\n";
-	printf("%-26s %-26s %s", "Name", "Email", "Phone\n");
+	printf("%-28s %-30s %-s", "Name", "Email", "Phone\n");
 	print "-------------------------------------------------------------------------\n";
 }
