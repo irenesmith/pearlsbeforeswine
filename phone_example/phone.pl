@@ -55,6 +55,8 @@ if ($argCount == 1) {
 		print "Sorry, I can't search if you don't tell me what to find.\n";
 		print "Usage: perl phone.pl lastName\n";
 		print "Or use: perl phone.pl lastName firstName\n";
+	} elsif ($ARGV[0] eq "-s") {
+		SortList();
 	}
 }
 
@@ -65,6 +67,8 @@ if ($argCount == 1) {
 if ($argCount == 2) {
 	if($ARGV[0] eq "-f") {
 		FindByLast($ARGV[1]);
+	} elsif ($ARGV[0] eq "-s") {
+		SortList($ARGV[1]);
 	}
 }
 
@@ -82,6 +86,11 @@ if ($argCount == 3) {
 }
 
 #-------------------------------------------------------------------------
+# With 5 you get eggroll. Actually, with 5 arguments, we can guess that
+# the user wants to add a new entry to the file. Of course, we will only
+# do that if the first argument is -a. I'm being lazy here and assuming
+# that the rest of the parameters are what they are supposed to be. The
+# routine will validate (once that feature is added!)
 #-------------------------------------------------------------------------
 if ($argCount == 5) {
 	if($ARGV[0] eq "-a") {
@@ -265,6 +274,11 @@ sub AppendToFile {
 	print "Added: $_[0], $_[1], $_[2], $_[3]\n";
 }
 
+#-------------------------------------------------------------------------
+# This routine outputs the dashed lines and column headers for any other
+# routine that is printing a list of entries. It is used by the sort
+# routines and also by the procedure that prints the entire. list.
+#-------------------------------------------------------------------------
 sub PrintHeader {
 	# Perl printf is like the printf function in C. It makes
 	# the data lines neater. The first two are displayed in a 26
@@ -272,4 +286,38 @@ sub PrintHeader {
 	print "-------------------------------------------------------------------------\n";
 	printf("%-28s %-30s %-s", "Name", "Email", "Phone\n");
 	print "-------------------------------------------------------------------------\n";
+}
+
+#-------------------------------------------------------------------------
+# A routine to sort the list by a selectable column. So far, the Soring is
+# coming out kind of funky. It is probably because of the multiple columns.
+#-------------------------------------------------------------------------
+sub SortList {
+	# Open the file.
+	open (phoneFile, $FileName) or die "Could not open $FileName.";
+	my @list = ();
+	$curRow = 0;
+	while(<phoneFile>) {
+		chomp;
+		($LastName, $FirstName, $Email, $Phone) = split(", ");
+		$list[$curRow][0] = $LastName . ", " . $FirstName;
+		$list[$curRow][1] = $Email;
+		$list[$curRow][2] = $Phone;
+		++$curRow;
+	}
+	
+	close phoneFile;
+	
+	print "Sorting $curRow records.\n";
+	my @sortedList = sort @list;
+	
+	PrintHeader();
+	$curRow = 0;
+	while ($curRow < @list) {
+		printf("%-28s %-30s %-s\n",
+		$sortedList[$curRow][0],
+		$sortedList[$curRow][1],
+		$sortedList[$curRow][2]);
+		++$curRow;
+	}
 }
