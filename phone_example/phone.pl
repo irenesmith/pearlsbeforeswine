@@ -241,7 +241,7 @@ sub InteractiveAdd {
 	chomp $email;
 	
 	print "Phone 999-999-9999: ";
-	my $phone = <STDIR>;
+	my $phone = <STDIN>;
 	chomp $phone;
 	
 	AppendToFile($firstName, $lastName, $email, $phone);
